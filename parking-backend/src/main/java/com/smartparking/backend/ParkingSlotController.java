@@ -15,7 +15,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 @RestController
 @RequestMapping("/api/parking-slots")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins ={
+    "http://localhost:5173",
+    "http://localhost:5174"
+})
 public class ParkingSlotController {
 
     private final ParkingSlotRepository repository;
